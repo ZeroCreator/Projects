@@ -12,13 +12,13 @@ BOT_CONFIG = {
             'examples': ['Пока', 'Увидимся!', 'Покеда'],
             'responses': ['До свидания', 'Прощайте', 'Сайонара!']
         },
-        'new_intent': {
-            'examples': ['some_example1', 'some_example2', 'some_example3'],
-            'responses': ['some_response1', 'some_response2', 'some_response3']
+        'how_are_you': {
+            'examples': ['Как дела?', 'Как ты поживаешь?', 'Как ты?'],
+            'responses': ['Отлично!', 'Лучше всех', 'Великолепно!']
         },
-        'new_intent1': {
-            'examples': ['some_example1', 'some_example2', 'some_example3'],
-            'responses': ['some_response1', 'some_response2', 'some_response3']
+        'weather_is': {
+            'examples': ['Как тебе погода?', 'Ты любишь дождь?', 'Сегодня будет жарко?'],
+            'responses': ['Погода всегда хороша', 'У природы нет плохой погоды', 'Мне нравится']
         },
         'new_intent2': {
             'examples': ['some_example1', 'some_example2', 'some_example3'],
