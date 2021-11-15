@@ -1,17 +1,10 @@
-from random import choice
-from typing import Union
-
-
-failures_list = ["В этом лабиринте одни тупики!", "Выход так близко, но недостижим!", "Выхода нет!"]
-
-
-def can_exit(lst: list) -> Union[bool, str]:
+def can_exit(lst: list) -> bool:
     """ Функция возвращает истину, если можно пройти, двигаясь по нулям влево-вправо-вверх-вниз
     с левого верхнего угла матрицы до правого нижнего.
     :param lst: матричный двумерный список
-    :return: True если возможно, иначе вывод сообщения из списка, выбранного случайным образом.
+    :return: True or False.
     """
-    flag: int = 3 # Маркер для прохода матрицы
+    flag: int = 3  # Маркер для прохода матрицы
     if lst[0][0] == 0:
         lst[0][0] = flag
     for i in range(len(lst)):
@@ -27,9 +20,7 @@ def can_exit(lst: list) -> Union[bool, str]:
                                 # Меняем 0 на маркер
                                 if lst[i + x][j + y] == 0:
                                     lst[i + x][j + y] = flag
-    if lst[-1][-1] == flag:
-        return True
-    return choice(failures_list)
+    return lst[-1][-1] == flag
 
 
 if __name__ == "__main__":
@@ -41,21 +32,21 @@ if __name__ == "__main__":
         [1, 1, 1, 1, 1, 0, 0]
     ])
 
-    assert can_exit([
+    assert not can_exit([
         [0, 1, 1, 1, 1, 1, 1],
         [0, 0, 1, 0, 0, 1, 1],
         [1, 0, 0, 0, 0, 1, 1],
         [1, 1, 0, 1, 0, 0, 1],
         [1, 1, 0, 0, 1, 1, 1]
-    ]) != True
+    ])
 
-    assert can_exit([
+    assert not can_exit([
         [0, 1, 1, 1, 1, 0, 0],
         [0, 0, 0, 0, 1, 0, 0],
         [1, 1, 1, 0, 0, 0, 0],
         [1, 1, 1, 1, 1, 1, 0],
         [1, 1, 1, 1, 1, 1, 1]
-    ]) != True
+    ])
 
     assert can_exit([
         [0, 1, 1, 1, 1, 0, 0],
@@ -65,10 +56,10 @@ if __name__ == "__main__":
         [1, 1, 1, 1, 1, 1, 0]
     ])
 
-    assert can_exit([
+    assert not can_exit([
         [0, 1, 1, 1, 1, 0, 0],
         [0, 0, 0, 0, 1, 0, 0],
         [1, 1, 1, 0, 1, 0, 0],
         [1, 0, 0, 1, 1, 1, 0],
         [1, 1, 1, 1, 1, 1, 0]
-    ]) != True
+    ])
