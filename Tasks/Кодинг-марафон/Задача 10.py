@@ -1,11 +1,14 @@
 from random import choice
-a = ["В этом лабиринте одни тупики!", "Выход так близко, но недостижим!", "Выхода нет!"]
+from typing import Union
 
-def can_exit(lst: list) -> list:
+failures_list = ["В этом лабиринте одни тупики!", "Выход так близко, но недостижим!", "Выхода нет!"]
+
+
+def can_exit(lst: list) -> Union[bool, str]:
     flag: int = 3
     if lst[0][0] == 0:
         lst[0][0] = flag
-    for i in range(len(lst)-1):
+    for i in range(len(lst) - 1):
         for j in range(len(lst[i])):
             if lst[i][j] == flag:
                 for x in range(-1, 2):
@@ -16,9 +19,25 @@ def can_exit(lst: list) -> list:
             lst[i][j] = 0
     if lst[-1][-1] == flag:
         return True
-    else:
-        return choice(a)
-    # return lst[-1][-1] == flag else choice(a)
+    return choice(failures_list)
+
+
+if __name__ == "__main__":
+    assert can_exit([
+        [0, 1, 1, 1, 1, 1, 1],
+        [0, 0, 1, 1, 0, 1, 1],
+        [1, 0, 0, 0, 0, 1, 1],
+        [0, 1, 1, 1, 0, 0, 1],
+        [0, 1, 1, 1, 1, 0, 0]
+]) == True
+
+    assert can_exit([
+        [0, 1, 1, 1, 1, 0, 0],
+        [0, 0, 0, 0, 1, 0, 0],
+        [1, 1, 1, 0, 0, 0, 0],
+        [1, 0, 0, 0, 1, 1, 0],
+        [1, 1, 1, 1, 1, 1, 0]
+]) == True
 
 
 
@@ -29,7 +48,6 @@ print(can_exit([
     [0, 1, 1, 1, 0, 0, 1],
     [0, 1, 1, 1, 1, 0, 0]
 ]))
-
 
 print(can_exit([
     [0, 1, 1, 1, 1, 1, 1],
