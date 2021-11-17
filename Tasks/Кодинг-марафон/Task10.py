@@ -4,12 +4,12 @@ def can_exit(lst: list) -> bool:
     :param lst: матричный двумерный список
     :return: True or False.
     """
-    flag: int = 3  # Маркер для прохода матрицы
+    marker: int = 3  # Маркер для прохода матрицы
     if lst[0][0] == 0:
-        lst[0][0] = flag
+        lst[0][0] = marker
     for i in range(len(lst)):
         for j in range(len(lst[i])):
-            if lst[i][j] == flag:
+            if lst[i][j] == marker:
                 # Обработка граничащих с маркером позиций
                 for x in range(-1, 2):
                     for y in range(-1, 2):
@@ -19,8 +19,8 @@ def can_exit(lst: list) -> bool:
                             if i + x >= 0 and j + y >= 0 and i + x < len(lst) and j + y < len(lst[i]):
                                 # Меняем 0 на маркер
                                 if lst[i + x][j + y] == 0:
-                                    lst[i + x][j + y] = flag
-    return lst[-1][-1] == flag
+                                    lst[i + x][j + y] = marker
+    return lst[-1][-1] == marker
 
 
 if __name__ == "__main__":
