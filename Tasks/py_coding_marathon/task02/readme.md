@@ -7,10 +7,14 @@
 - каждая передаваемая в функцию строка - отдельное предложение
 - предложение после нормализации должно начинаться с заглавной буквы
 - восклицательный знак добавляем к предложениям, которые переводили из верхнего регистра в нижний.
+- 
 Примеры:
+
 normalize("CAPS LOCK DAY IS OVER")
 ➞ "Caps lock day is over!"
+
 normalize("Today is not caps lock day.")
 ➞ "Today is not caps lock day."
+
 normalize("Let us stay calm, no need to panic.")
 ➞ "Let us stay calm, no need to panic."
