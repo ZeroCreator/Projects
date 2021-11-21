@@ -1,4 +1,3 @@
-"""
 Задание 2:
 22 октября — ДЕНЬ CAPS LOCK. За исключением этого дня, все предложения должны быть в нижнем регистре. Поэтому напишите
 функцию для нормализации предложения.
@@ -15,21 +14,3 @@ normalize("Today is not caps lock day.")
 ➞ "Today is not caps lock day."
 normalize("Let us stay calm, no need to panic.")
 ➞ "Let us stay calm, no need to panic."
-"""
-
-
-# def normalize(text_sentence):
-#     if text_sentence[1] in "ABCDEFGHIJKLMNOPQRSTUVWXYZ":
-#         return f"{text_sentence.capitalize()}!"
-#     return text_sentence
-
-
-def normalize(txt):
-    if txt.isupper()==True:
-        txt = txt.capitalize()+"!"
-    return txt
-
-
-print(normalize("CAPS LOCK DAY IS OVER"))
-print(normalize("Today is not caps lock day."))
-print(normalize("Let us stay calm, no need to panic."))

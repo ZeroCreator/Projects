@@ -1,4 +1,3 @@
-"""
 Задача 4
 Задание:
 Панцифровое число — целое число (в какой-то выбранной системе счисления), в котором каждая цифра данной системы
@@ -12,20 +11,3 @@
 is_pandigital (98140723568910) ➞ True
 is_pandigital (90864523148909) ➞ False: 7 отсутствует.
 is_pandigital (112233445566778899) ➞ False
-"""
-
-
-def is_pandigital(num):
-    if sorted(set(str(num))) == list('0123456789'):
-        return True
-    return False
-
-
-print(is_pandigital(98140723568910))
-print(is_pandigital (90864523148909))
-print(is_pandigital (112233445566778899))
-
-
-#
-# def is_pandigital(number):
-#     return len(set(str(number))) == 10
