@@ -11,7 +11,7 @@ def starFILL(n, dlina):
             joe.left(angle)
     joe.end_fill()
 
-
+# Устанавливаем фон и размеры неба
 window = turtle.Screen()
 window.bgcolor("black")
 window.setup(700, 500)
