@@ -13,14 +13,14 @@ txt = "goatcode"
 ```
 ___
 Примеры:
-- count_animals(txt) ➞ 2
-(первое животное = "dog", оставшиеся символы в строке = "atcoe", второе животное = "cat". count = 2 (верно), если взять  сперва  "goat", оставшиеся символы в строке = "code", т.е. больше нельзя составить имен животных count = 1 (неверно))
+```python
+count_animals(txt) ➞ 2
+# (первое животное = "dog", оставшиеся символы в строке = "atcoe", второе животное = "cat". count = 2 (верно), если взять 
+#сперва  "goat", оставшиеся символы в строке = "code", т.е. больше нельзя составить имен животных count = 1 (неверно))
 
+count_animals("goatcode") ➞ 2 # "dog", "cat"
 
-- count_animals("goatcode") ➞ 2 # "dog", "cat"
+count_animals("cockdogwdufrbir") ➞ 4 # "cow", "duck", "frog", "bird"
 
-
-- count_animals("cockdogwdufrbir") ➞ 4 # "cow", "duck", "frog", "bird"
-
-
-- count_animals("dogdogdogdogdog") ➞ 5
+count_animals("dogdogdogdogdog") ➞ 5
+```

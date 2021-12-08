@@ -6,13 +6,13 @@
 Примечание: Исходим из того, что передаваемые строки всегда будут одинаковой длины.
 ___
 Примеры:
-- hamming_distance("abcde", "bcdef") ➞ 5
+```python
+hamming_distance("abcde", "bcdef") ➞ 5
 
+hamming_distance("abcde", "abcde") ➞ 0
 
-- hamming_distance("abcde", "abcde") ➞ 0
+hamming_distance("strong", "strung") ➞ 1
 
+hamming_distance("ABBA", "abba") ➞ 4
+```
 
-- hamming_distance("strong", "strung") ➞ 1
-
-
-- hamming_distance("ABBA", "abba") ➞ 4

@@ -3,13 +3,13 @@
 последовательность нулей той же длины.
 ___
 Примеры:
-- same_length (110011100010) ➞ True
+```python
+same_length (110011100010) ➞ True
 
+same_length (101010110) ➞ False
 
-- same_length (101010110) ➞ False
+same_length (111100001100) ➞ True
 
+same_length (111) ➞ False
+```
 
-- same_length (111100001100) ➞ True
-
-
-- same_length (111) ➞ False

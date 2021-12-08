@@ -4,25 +4,25 @@
 Ввод будет двухмерным списком, где 1 представляет кусок камня, а 0 — воздушное пространство.
 ___
 Примеры:
-- mineralFormation([
+```python
+mineralFormation([
   [0, 1, 0, 1],
   [0, 1, 0, 1],
   [0, 0, 0, 1],
   [0, 0, 0, 0]
 ]) ➞ "stalactites"
 
-
-- ineralFormation([
+ineralFormation([
   [0, 0, 0, 0],
   [0, 1, 0, 1],
   [0, 1, 1, 1],
   [0, 1, 1, 1]
 ]) ➞ "stalagmites"
 
-
-- mineralFormation([
+mineralFormation([
   [1, 0, 1, 0],
   [1, 1, 0, 1],
   [0, 1, 1, 1],
   [0, 1, 1, 1]
 ]) ➞ "both"
+```
