@@ -2,5 +2,4 @@
 
 ***Game Ping-Pong (turtle).***
 ____
-:whs:
-> 
+
