@@ -1,3 +1,6 @@
-Игра Пинг-Понг (turtle).
+**Игра Пинг-Понг (turtle).**
 
-Game Ping-Pong (turtle).
+***Game Ping-Pong (turtle).***
+____
+:whs:
+> 
