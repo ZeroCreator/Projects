@@ -1,0 +1,1 @@
+# ***Задачи с ресурсов PythonBoost и [pythonist](https://pythonist.ru/, "https://pythonist.ru/")***
