@@ -1,4 +1,7 @@
-Задачи с ресурсов PythonBoost и https://pythonist.ru/
-Игры: Сапер
-ChatBots
-Примеры фракталов
+# ***Задачи с ресурсов PythonBoost и https://pythonist.ru/***
+___
+- Игры:
+    + Сапер
+    + Пинг-Понг (turtle)
+- ChatBots
+- Примеры фракталов
