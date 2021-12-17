@@ -19,3 +19,5 @@ from random import choice, randint
 ***Управление правой ракеткой:***
 - "o" - вверх
 - "k" - вниз
+
+![Иллюстрация к проекту](https://github.com/ZeroCreator/PythonProjects/blob/master/Ping-Pong%20game%20(turtle)/Ping-Pong.png)
